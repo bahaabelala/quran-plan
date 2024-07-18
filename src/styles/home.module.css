@@ -1,0 +1,118 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  /* padding: 50px 10%; */
+  overflow: auto;
+  text-align: center;
+
+  background: url("/images/mosque.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-left: 20px;
+}
+
+.main::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--tertiary);
+}
+
+.main::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--secondary);
+}
+
+.greeting {
+  width: 220px;
+  height: 76px;
+  padding: 10px 20px;
+  margin: 60px auto 70px auto;
+  border-radius: 38px;
+  background-color: var(--secondary);
+  box-shadow: var(--primary-box-shadow);
+
+  color: var(--primary);
+  font-family: "Amiri Quran";
+  font-size: 3em;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.letter {
+  font-size: 2em;
+  text-align: justify;
+}
+
+.sentenceBox1 {
+  width: fit-content;
+  height: auto;
+  padding: 6px 35px;
+  border-radius: 33px 0 0 33px;
+  background-color: var(--secondary);
+  box-shadow: var(--primary-box-shadow);
+
+  color: var(--primary);
+  font-size: 30px;
+}
+
+.sentenceBox2 {
+  width: 90%;
+  max-width: 550px;
+  height: auto;
+  border-radius: 33px;
+  margin: 40px auto;
+  padding: 10px 30px;
+  background-color: var(--tertiary);
+  box-shadow: var(--primary-box-shadow);
+
+  color: var(--secondary);
+  font-size: 30px;
+  text-align: center;
+}
+
+.quran {
+  font-family: "Amiri Quran";
+  line-height: 40px;
+}
+
+.continueBtn {
+  outline: none;
+  border: none;
+
+  width: 250px;
+  height: 70px;
+  margin: 100px auto 50px auto;
+  border-radius: 35px;
+  border: 3px solid var(--tertiary);
+  box-shadow: var(--primary-box-shadow);
+  background: linear-gradient(90deg, #ffefcb 50%, #229985 50%);
+  background-size: 200% 200%;
+
+  font-family: "Amiri", sans-serif;
+  font-weight: bold;
+  font-size: 1.7em;
+  color: var(--secondary);
+
+  transition: background-position 0.15s ease, color 0.3s ease;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.continueBtn:hover {
+  background-position: 100% 0%;
+  color: var(--primary);
+}
+
+@media (max-width: 580px) {
+  .greeting {
+    font-size: 2.7em;
+  }
+
+  .letter {
+    font-size: 1.6em;
+  }
+}
